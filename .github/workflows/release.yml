@@ -56,6 +56,8 @@ jobs:
         env:
           TARGET: ${{ matrix.target }}
           NAME: ${{ matrix.name }}
+          # No macOS metadata files (._*) in the archive.
+          COPYFILE_DISABLE: "1"
         run: |
           mkdir -p "dist/plugin/bin"
           cp plugin.json dist/plugin/
