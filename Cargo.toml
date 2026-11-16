@@ -1,0 +1,12 @@
+[package]
+name = "hello"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+simpleedit-plugin = { git = "https://github.com/simple-edit-app/plugin-sdk", tag = "v0.1.0" }
+
+[profile.release]
+strip = true
+lto = true

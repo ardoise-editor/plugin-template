@@ -1,0 +1,22 @@
+{
+  "id": "acme.hello",
+  "name": { "en": "Hello", "fr": "Bonjour" },
+  "version": "0.1.0",
+  "api": 1,
+  "description": {
+    "en": "A plugin to start from: a command and a panel",
+    "fr": "Un plugin pour commencer : une commande et un panneau"
+  },
+  "author": "Acme",
+  "repository": "acme/hello",
+  "license": "MIT",
+  "command": ["bin/hello"],
+  "contributes": {
+    "commands": [
+      { "id": "hello.greet", "title": { "en": "Say hello", "fr": "Dire bonjour" } }
+    ],
+    "panels": [
+      { "id": "hello", "title": { "en": "Hello", "fr": "Bonjour" }, "icon": "" }
+    ]
+  }
+}
