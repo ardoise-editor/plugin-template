@@ -5,7 +5,7 @@ edition = "2021"
 publish = false
 
 [dependencies]
-simpleedit-plugin = { git = "https://github.com/simple-edit-app/plugin-sdk", tag = "v0.10.0" }
+ardoise-plugin = { path = "../plugin-sdk" }
 
 [profile.release]
 strip = true

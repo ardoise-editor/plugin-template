@@ -3,7 +3,7 @@
 A plugin for [Ardoise Editor](https://github.com/ardoise-editor/ardoise) to
 start from: a command that says hello in the status bar, and a panel that
 asks your name. It is written in Rust with
-[`simpleedit-plugin`](https://github.com/ardoise-editor/plugin-sdk); a
+[`ardoise-plugin`](https://github.com/ardoise-editor/plugin-sdk); a
 plugin can be written in any language (see the guide).
 
 **The guide:** <https://ardoise-editor.github.io/ardoise/plugins.html>

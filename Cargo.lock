@@ -3,10 +3,18 @@
 version = 4
 
 [[package]]
+name = "ardoise-plugin"
+version = "0.12.0"
+dependencies = [
+ "serde",
+ "serde_json",
+]
+
+[[package]]
 name = "hello"
 version = "0.1.0"
 dependencies = [
- "simpleedit-plugin",
+ "ardoise-plugin",
 ]
 
 [[package]]
@@ -80,15 +88,6 @@ dependencies = [
  "serde",
  "serde_core",
  "zmij",
-]
-
-[[package]]
-name = "simpleedit-plugin"
-version = "0.10.0"
-source = "git+https://github.com/simple-edit-app/plugin-sdk?tag=v0.10.0#a4401640aff448eb718834882b3597fbfc2dcc93"
-dependencies = [
- "serde",
- "serde_json",
 ]
 
 [[package]]

@@ -1,9 +1,9 @@
 //! A plugin for Ardoise: a command that says hello in the status bar,
 //! and a panel that asks your name.
 
-use simpleedit_plugin::protocol::{Context, InitializeParams, UiEvent};
-use simpleedit_plugin::ui::*;
-use simpleedit_plugin::{run, Host, Plugin};
+use ardoise_plugin::protocol::{Context, InitializeParams, UiEvent};
+use ardoise_plugin::ui::*;
+use ardoise_plugin::{run, Host, Plugin};
 
 #[derive(Default)]
 struct Hello {
@@ -63,7 +63,7 @@ impl Plugin for Hello {
         }
     }
 
-    fn settings_changed(&mut self, host: &Host, settings: &simpleedit_plugin::protocol::Settings) {
+    fn settings_changed(&mut self, host: &Host, settings: &ardoise_plugin::protocol::Settings) {
         self.french = settings.locale.starts_with("fr");
         host.render("hello", self.view());
     }
