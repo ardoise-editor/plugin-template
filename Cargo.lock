@@ -5,6 +5,7 @@ version = 4
 [[package]]
 name = "ardoise-plugin"
 version = "0.12.0"
+source = "git+https://github.com/ardoise-editor/plugin-sdk?tag=v0.12.0#32da0398b3a29b97421af71d4a3defd6da14edd8"
 dependencies = [
  "serde",
  "serde_json",
