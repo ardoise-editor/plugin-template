@@ -1,12 +1,12 @@
-# SimpleEdit plugin template
+# Ardoise Editor plugin template
 
-A plugin for [SimpleEdit](https://github.com/simple-edit-app/simpleedit) to
+A plugin for [Ardoise Editor](https://github.com/ardoise-editor/ardoise) to
 start from: a command that says hello in the status bar, and a panel that
 asks your name. It is written in Rust with
-[`simpleedit-plugin`](https://github.com/simple-edit-app/plugin-sdk); a
+[`simpleedit-plugin`](https://github.com/ardoise-editor/plugin-sdk); a
 plugin can be written in any language (see the guide).
 
-**The guide:** <https://simple-edit-app.github.io/simpleedit/plugins.html>
+**The guide:** <https://ardoise-editor.github.io/ardoise/plugins.html>
 
 ## Make it yours
 
@@ -25,13 +25,13 @@ cargo build --release
 mkdir -p bin && cp target/release/hello bin/
 ```
 
-Then in SimpleEdit: **Preferences › Plugins › Link a folder…** and pick this
+Then in Ardoise Editor: **Preferences › Plugins › Link a folder…** and pick this
 folder. The plugin runs from here: build again, and **Uninstall** then link
 again (or restart the editor) to load the new build. What it prints to its
 standard error is in `plugin.log`, in the plugin's data folder:
 
-- Linux: `~/.local/share/simpleedit/plugin-data/<id>/plugin.log`
-- macOS: `~/Library/Application Support/simpleedit/plugin-data/<id>/plugin.log`
+- Linux: `~/.local/share/ardoise/plugin-data/<id>/plugin.log`
+- macOS: `~/Library/Application Support/ardoise/plugin-data/<id>/plugin.log`
 
 ## Publish it
 

@@ -1,4 +1,4 @@
-//! A plugin for SimpleEdit: a command that says hello in the status bar,
+//! A plugin for Ardoise: a command that says hello in the status bar,
 //! and a panel that asks your name.
 
 use simpleedit_plugin::protocol::{Context, InitializeParams, UiEvent};
